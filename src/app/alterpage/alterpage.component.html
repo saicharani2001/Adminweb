@@ -1,0 +1,83 @@
+<!-- <mat-toolbar class="toolbar">
+    <span>TRASH CREW</span>
+</mat-toolbar>
+<body>
+    <div fxFlex="50" fxLayout="row">
+        <img src="../../assets/alter1.png" alt="image">
+    </div>
+    <div fxFlex="50" id="div2" fxLayout="row" fxLayoutAlign="center center">
+        <mat-card class="mat-elevation-z24" fxLayout="column" class="innercard">
+            <mat-toolbar>ALTER DETAILS</mat-toolbar>
+            <h1></h1>
+            <div>
+                <form action="/action_page.php">
+                    <label for="fname">Full Name: </label>
+                    <input type="text" id="fname" name="fullname" placeholder="Your name..">
+                </form>
+                <form action="/action_page.php">
+                    <label for="fname">Age: </label>
+                    <input type="text" id="age" name="age" placeholder="Your age..">
+                </form>
+                <form action="/action_page.php">
+                    <label for="fname">Age: </label>
+                    <input type="text" id="age" name="age" placeholder="Your age..">
+                </form>
+                
+            </div>
+            
+
+        </mat-card>
+    </div>
+</body>     --><body fxLayout="column">
+    <mat-toolbar class="one"><span><b>TRASH CREW</b></span></mat-toolbar>
+    <div fxFlex="91" fxLayout="row">
+        <div fxFlex="50" fxLayout="row" class="toolbar">
+            <img src="../../assets/edit.jpg" alt="image" width="500" height="500">
+        </div>
+        <div fxFlex="50" >
+            <mat-card class="two" >
+                <mat-toolbar class="t1">
+                    <span><strong>Edit Details</strong></span>
+                </mat-toolbar>
+                <br>
+                <mat-form-field >
+                    <mat-label><b>Full Name</b></mat-label>
+                    <input matInput type="text" placeholder="Full Name" [(ngModel)]="Driverdetails.fullname" [disabled]="display">
+                </mat-form-field>
+                <mat-form-field >
+                    <mat-label><b>Age</b></mat-label>
+                    <input matInput type="number" placeholder="Age" [(ngModel)]="Driverdetails.age" [disabled]="display">
+                </mat-form-field>
+                <mat-form-field >
+                    <mat-label><b>Driving License</b></mat-label>
+                    <input matInput type="text" placeholder="Driving License" [(ngModel)]="Driverdetails.licenseId" [disabled]="display">
+                </mat-form-field>
+                <mat-form-field >
+                    <mat-label><b>Phone Number</b></mat-label>
+                    <input matInput type="number" placeholder="Phone Number" [(ngModel)]="Driverdetails.phone" [disabled]="display">
+                </mat-form-field>
+                <mat-form-field >
+                    <mat-label><b>City</b></mat-label>
+                    <input matInput type="text" placeholder="City" [(ngModel)]="Driverdetails.city" [disabled]="display">
+                </mat-form-field>
+                <mat-form-field >
+                    <mat-label><b>Pincode</b></mat-label>
+                    <input matInput type="text" placeholder="Pincode" [(ngModel)]="Driverdetails.pincode" [disabled]="display">
+                </mat-form-field>
+                <mat-form-field >
+                    <mat-label><b>Place</b></mat-label>
+                    <input matInput type="text" placeholder="Place" [(ngModel)]="Driverdetails.place" [disabled]="display">
+                </mat-form-field>
+                <mat-form-field >
+                    <mat-label><b>Flat No./Street</b></mat-label>
+                    <input matInput type="text" placeholder="Flat No./Street" [(ngModel)]="Driverdetails.street" [disabled]="display">
+                </mat-form-field>
+                <br>
+                <div fxLayout="row" fxLayoutAlign="end center" fxLayoutGap="30px" align="end">
+                    <button mat-raised-button (click)="updateDetails()"><em>Save</em></button>
+                    <button mat-raised-button (click)="navTo()"><em>Cancel</em></button>
+                </div>
+            </mat-card>    
+        </div>
+    </div>         
+</body>

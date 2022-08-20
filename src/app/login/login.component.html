@@ -1,0 +1,43 @@
+<mat-toolbar  class="toolbar">
+    <div >
+        <span>TRASH CREW</span>
+    </div>
+    </mat-toolbar>
+    <body fxLayout="row"> 
+            <div fxFlex="50">
+                <span id="ten">Where There Is a Dirt-<br><span id="t1">We Can Clean!</span><br><span id="t2">Yes True....</span><br><span id="t3">But None Cleans Garbage Dumps!!</span>  </span>  
+                <img src="../../assets/login1.png" alt="image">
+            </div>
+            <div fxFlex="48" id="div2" fxLayout="row" fxLayoutAlign="end center">
+                    <mat-card class="mat-elevation-z24" fxLayout="column" class="innercard">
+                        <div id="div1" fxFlex="15" fxLayout="row" fxLayoutAlign="center center">
+                            <span id="span1">LOGIN</span>
+                        </div>
+                        <div fxFlex="50" fxLayout="column" fxLayoutAlign="space-evenly center">
+                            <div>
+                                <span class="label">LicenseID : </span>
+                                <mat-form-field appearance="outline">
+                                    <input matInput type="text" placeholder="LicenseID" >
+                                </mat-form-field>
+                            </div>
+                            <div>
+                                <span class="label">Password : </span>
+                                <mat-form-field appearance="outline">
+                                    <input matInput type="password"  placeholder="password" >
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div fxLayout="column" fxFlex="25" fxLayoutAlign="center center">
+                            <div>
+                                <button id="loginbtn" mat-raised-button color="primary" >Login</button>
+                            </div>
+                            <div class="nav-link">
+                                <a routerLink="/home" routerLinkactivate="active" class="nav-link"><button mat-button class="text1">Forgot Password?</button></a>
+                            </div>
+                        </div> 
+                       
+                    </mat-card>
+            </div>
+</body>
+
+    

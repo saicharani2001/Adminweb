@@ -1,0 +1,68 @@
+.innercard{
+    width: 400px;
+    height: 400px;
+    background-color: rgba(225, 239, 223, 0.7);
+    background-color: transparent;
+    margin-top: 2px;
+
+}
+
+body{
+    background-color: whitesmoke;
+}
+#span1{
+    font-size: 30px;
+    color: rgb(251, 242, 242);
+    font-family:cursive;
+}
+#div1{
+    background-color: rgb(4, 42, 65);
+}
+.label{
+    color: rgb(4, 61, 105);
+    font-size: 1.3vw;
+}
+#loginbtn{
+    width: 100px;
+    height: 40px;
+    font-size: 22px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 0.1vw;
+}
+span>button{
+    background-color: transparent;
+    font-size: 16px;
+    padding: 0px;
+    text-decoration:underline;
+    color: blue;
+}
+#span2{
+    font-size: 16px;
+}
+span{
+    font-size: 35px;
+    font-family:cursive;
+}
+.toolbar{
+    background-color: rgba(36, 179, 36, 0.939);
+}
+img{
+    position:relative;
+}
+#ten{
+    position: absolute;
+    z-index: 3;
+    padding-top: 30px;
+    line-height: 50px;
+    padding-left: 40px;
+    font-family:cursive;
+}
+#t1{
+     font-family:cursive;
+}
+#t2{
+     font-family:cursive; 
+}
+#t3{
+     font-family:cursive; 
+}
